@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  background: #555;
+  min-height: 100vh;
+}
+.App h1{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 2rem;
+  color: #eee;
+}

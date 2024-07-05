@@ -1,0 +1,173 @@
+.App{
+  margin: 20px 60px;
+}
+header{
+  display: flex;
+ align-items: center;
+  justify-content: space-between;
+}
+.App-header {
+  font-size: 32px;
+  font-weight: 500;
+}
+.right-side{
+  color: #626060ef;
+  font-weight: 400;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+.transaction-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.transaction-left img{
+  border-radius: 50%;
+}
+.transc-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.timing-details {
+  display: flex;
+  align-items: center;
+}
+
+.timing {
+  font-size: 18px;
+  color: #555555a7;
+  font-weight: 500;
+}
+
+span.dot {
+  font-size: 20px;
+  color: #555555a7;
+  font-weight: 600;
+  margin: 0 2px;
+}
+
+
+.change {
+  font-size: 24px;
+  font-weight: 650;
+}
+
+  .positive {
+    color: green !important;
+  }
+
+  .negative {
+    color: red !important;
+  }
+
+.transaction-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.statement{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+    .App{
+      margin: 20px 20px;
+    }
+}
+@media (max-width: 550px) {
+.transc-details{
+  padding: 0px;
+}
+.title{
+  font-size: 20px;
+}
+.timing{
+  font-size: 16px;
+}
+.change{
+  font-size: 20px;
+}
+.statement{
+  font-size: 18px;
+}
+.App-header{
+  font-size: 26px;
+}
+}
+@media (max-width: 450px) {
+  .transaction-left img{
+    width: 80px;
+    height: 80px;
+  }
+  .title{
+    font-size: 18px;
+  }
+  .timing{
+    font-size: 15px;
+  }
+  .change{
+    font-size: 18px;
+  }
+  .statement{
+    font-size: 16px;
+  }
+  .App-header{
+    font-size: 22px;
+  }
+  }
+@media (max-width: 410px) {
+  .transaction-left img{
+    width: 70px;
+    height: 70px;
+  }
+  .timing{
+    font-size: 13px;
+  }
+  .change{
+    font-size: 16px;
+  }
+  .statement{
+    font-size: 14px;
+  }
+}
+@media (max-width: 365px) {
+  .transaction-left{
+    gap: 5px;
+  }
+  .transaction-right{
+    flex-direction: column;
+  }
+  .transaction{
+    flex-direction: column;
+  }
+  .transaction-left{
+    flex-direction: column;
+  }
+  .title{
+    text-align: center;
+  }
+  .timing{
+    text-align: center;
+  }
+}
